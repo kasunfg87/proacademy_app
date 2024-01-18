@@ -3,6 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_map_location_picker_flutter/google_map_location_picker_flutter.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:logger/logger.dart';
+import 'package:proacademy_app/components/widgets/utilities/api_keys.dart';
 import 'package:proacademy_app/provider/user_provider.dart';
 import 'package:provider/provider.dart';
 import '../components/widgets/utilities/app_colors.dart';
@@ -96,7 +97,7 @@ class LocationProvider extends ChangeNotifier {
       context: context,
       addressPlaceHolder: 'Move the map',
       addressTitle: 'Selected Address',
-      apiKey: "AIzaSyCCyQcvTgbR653d19S5QZoq0SrThwc5FYw",
+      apiKey: ApiHelper.googleApi,
       appBarTitle: "Pick Your Current Location",
       confirmButtonColor: AppColors.kPrimary,
       confirmButtonText: 'Pick Address',
