@@ -60,7 +60,7 @@ class _CustomPageViewState extends State<CustomPageView> {
                     ),
                     SubTitleText(text: value.subTitle[index]),
                     const SizedBox(
-                      height: 40,
+                      height: 30,
                     ),
                     index == 2
                         ? const SizedBox()
@@ -150,13 +150,16 @@ class _CustomPageViewState extends State<CustomPageView> {
                                           const Duration(milliseconds: 300),
                                       curve: Curves.easeInOut),
                                   backgroundColor: AppColors.kPrimary,
-                                  child: const Icon(Icons.arrow_forward_ios),
+                                  child: const Icon(
+                                    Icons.arrow_forward_ios,
+                                    color: AppColors.kWhite,
+                                  ),
                                 ),
                               ],
                             ),
                           ),
                     SizedBox(
-                      height: SizeConfig.h(context) * 0.08,
+                      height: SizeConfig.h(context) * 0.03,
                     ),
                   ],
                 ),

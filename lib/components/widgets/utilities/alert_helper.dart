@@ -9,7 +9,7 @@ class AlertHelper {
       context: context,
       dialogType: dialogType,
       // ignore: deprecated_member_use
-      animType: AnimType.BOTTOMSLIDE,
+      animType: AnimType.bottomSlide,
       title: title,
       desc: description,
       btnCancelOnPress: () {},

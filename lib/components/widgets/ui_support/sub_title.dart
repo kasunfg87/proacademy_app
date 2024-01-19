@@ -5,7 +5,7 @@ import '../utilities/app_colors.dart';
 class SubTitleText extends StatelessWidget {
   const SubTitleText({
     required this.text,
-    this.fontSize = 17,
+    this.fontSize = 16,
     this.fontColor = AppColors.kBlack,
     this.textAlign = TextAlign.center,
     this.textOverflow = TextOverflow.visible,

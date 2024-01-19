@@ -10,8 +10,8 @@ import 'package:proacademy_app/provider/location_provider.dart';
 import 'package:proacademy_app/provider/user_provider.dart';
 import 'package:proacademy_app/screens/splash/splash.dart';
 import 'package:provider/provider.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
-import 'package:responsive_framework/utils/scroll_behavior.dart';
+import 'package:responsive_framework/breakpoint.dart';
+import 'package:responsive_framework/responsive_breakpoints.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -40,18 +40,14 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Proacademy App',
         home: const Splash(),
-        builder: (context, child) => ResponsiveWrapper.builder(
-              BouncingScrollWrapper.builder(context, child!),
-              maxWidth: 1200,
-              minWidth: 450,
-              defaultScale: true,
+        builder: (context, child) => ResponsiveBreakpoints.builder(
               breakpoints: [
-                const ResponsiveBreakpoint.resize(450, name: MOBILE),
-                const ResponsiveBreakpoint.autoScale(800, name: TABLET),
-                const ResponsiveBreakpoint.autoScale(1000, name: TABLET),
-                const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
-                const ResponsiveBreakpoint.autoScale(2460, name: "4K"),
+                const Breakpoint(start: 0, end: 450, name: MOBILE),
+                const Breakpoint(start: 451, end: 800, name: TABLET),
+                const Breakpoint(start: 801, end: 1920, name: DESKTOP),
+                const Breakpoint(start: 1921, end: double.infinity, name: '4K')
               ],
+              child: child!,
             ));
   }
 }
