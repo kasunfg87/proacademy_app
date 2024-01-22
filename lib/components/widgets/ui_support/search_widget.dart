@@ -6,8 +6,8 @@ import '../utilities/app_colors.dart';
 
 class SearchWidget extends StatefulWidget {
   const SearchWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<SearchWidget> createState() => _SearchWidgetState();

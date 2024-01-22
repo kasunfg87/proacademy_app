@@ -9,8 +9,8 @@ import 'category.dart';
 class BookmarkTile extends StatelessWidget {
   const BookmarkTile({
     required this.model,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final CourseModel model;
 

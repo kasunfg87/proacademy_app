@@ -65,6 +65,7 @@ class AuthController {
           // If user created successfully, show an alert
           // ignore: use_build_context_synchronously
           AlertHelper.showSanckBar(
+            // ignore: use_build_context_synchronously
             context,
             'Your account has been successfully created!',
             AnimatedSnackBarType.success,

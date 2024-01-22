@@ -9,8 +9,8 @@ class SubTitleText extends StatelessWidget {
     this.fontColor = AppColors.kBlack,
     this.textAlign = TextAlign.center,
     this.textOverflow = TextOverflow.visible,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final String text;
   final double fontSize;

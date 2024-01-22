@@ -11,8 +11,8 @@ import 'instructor_profile.dart';
 class CourseTile extends StatelessWidget {
   const CourseTile({
     required this.model,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final CourseModel model;
 

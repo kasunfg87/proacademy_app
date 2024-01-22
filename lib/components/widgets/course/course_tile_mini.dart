@@ -8,8 +8,8 @@ import 'category_mini.dart';
 class CourseTileMini extends StatefulWidget {
   const CourseTileMini({
     required this.model,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final CourseModel model;
 

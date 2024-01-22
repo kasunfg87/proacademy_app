@@ -12,8 +12,8 @@ class CustomTextfield extends StatelessWidget {
     this.suffixIcon,
     this.readOnly = false,
     this.textOnTap,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   final TextEditingController? controller;
 
   final String hintText;

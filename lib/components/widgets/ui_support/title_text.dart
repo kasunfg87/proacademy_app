@@ -13,8 +13,8 @@ class TitleText extends StatelessWidget {
     this.fontSize = 25,
     this.fontColor = AppColors.kBlack,
     this.fontWeight = FontWeight.w700,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

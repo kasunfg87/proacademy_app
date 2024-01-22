@@ -5,8 +5,8 @@ import '../utilities/app_colors.dart';
 class CustomButton02 extends StatelessWidget {
   const CustomButton02({
     required this.onTap,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final Function() onTap;
   @override

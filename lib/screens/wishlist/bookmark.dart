@@ -4,7 +4,7 @@ import 'package:proacademy_app/components/widgets/utilities/app_colors.dart';
 import '../../components/widgets/ui_support/title_text.dart';
 
 class WishList extends StatelessWidget {
-  const WishList({Key? key}) : super(key: key);
+  const WishList({super.key});
 
   @override
   Widget build(BuildContext context) {

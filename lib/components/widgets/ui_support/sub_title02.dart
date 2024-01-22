@@ -12,8 +12,8 @@ class SubTitle02 extends StatelessWidget {
     this.fontSize = 15,
     this.fontColor = AppColors.kBlack,
     this.fontWeight = FontWeight.w600,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
